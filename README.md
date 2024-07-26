@@ -10,9 +10,9 @@
 
 ### 机器学习
 
-| # Features | Use MSISDN | Ensemble      | Adversial Validation | Pseudo Labeling | Models       | LB (10-fold CV) | PB    |
+| **# Features** | **Use MSISDN** | **Ensemble**      | **Adversial Validation** | **Pseudo Labeling** | **Models**       | **LB (10-fold CV)** | **PB**    |
 |----------|--------|-------------|-----|--------|------------------|-----------------|-------|
-| 40   | ✅    | ❌      | ❌  | ❌ | XGB-100          |      -        | 0.8100|
+| 40   | ✅    | ❌      | ❌  | ❌ | XGB-100          |      0.7609        | <font color='red'>0.8100</font>|
 | 40   | ❌ | soft voting | ❌  | ✅ | XGB-100/150/200/500 | 0.7645        | 0.8021|
 | 40   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200/500 | 0.7663        | 0.8050|
 | 40   | ✅    | hard voting | ❌  | ✅ | XGB-100/150/200/500 | 0.7662        | 0.8050|
@@ -21,13 +21,14 @@
 | 45   | ✅    | soft voting | ✅ | ✅ | XGB-100/150/200/500 | 0.8023        |    -  |
 | 45   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200/500 | 0.8139        |    -  |
 | 45   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200    | 0.8154        |    -  |
-| 50   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200    | 0.8175        |    -  |
+| 50   | ✅    | soft voting | ❌  | ❌ | XGB + CB + LGB    | 0.8175        |    -  |
+| 50   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200    | <font color='blue'>0.8175</font>        |    -  |
 | 50   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200/500/1000 | 0.8123  |    -  |
 | 55   | ✅    | soft voting | ❌  | ✅ | XGB-100/150/200    | 0.8158        |    -  |
-
 
 ### 深度学习
 
 | 设置                       | LB    | PB    |
 |------------------------------------|-------|-------|
 | 40 + FT-Transformer      |   0.8483   | - |
+| 45 + FT-Transformer      |   0.8495   | - |
